@@ -1,0 +1,105 @@
+/* :root{
+
+} */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(6, 18, 89);
+  background: linear-gradient(
+    216deg,
+    rgba(6, 18, 89, 1) 35%,
+    rgba(7, 23, 159, 1) 60%
+  );
+  /* background-image: url("images/stars.jpg"); */
+}
+
+.container{
+  max-width: 450px;
+  min-height: auto;
+  position: relative;
+  background: #dfdfdf;
+  border-radius: 8px;
+  box-shadow: 0px 0px 15px 3px black;
+  padding: 20px;
+}
+
+.title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  gap: 10px;
+}
+
+h1{
+  font-size: clamp(1rem, 5vw, 2rem);
+  color:black;
+}
+
+#celcius ,#fahrenheit, #Kelvin{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+input{
+  flex: 5;
+  height: 50px;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  border: none;
+  outline: none;
+  border-radius: 8px 0 0 8px;
+  padding: 0;
+}
+
+/*for chrome edge*/
+/* input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+} */
+.icon{
+  flex: 1;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 5px;
+  text-align: center;
+  background: #4d5964;
+  color: white;
+  cursor: pointer;
+  transition:.7s ease all;
+  border-radius: 0 8px 8px 0;
+}
+
+.butt{
+  margin-top: 25px;
+  text-align: center;
+}
+
+.butt button{
+  border: none;
+  outline: none;
+  padding: 10px 30px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0px 0px 10px 2px black;
+}
+
+.butt button:hover{
+  background: #000;
+  color: #fff;
+  box-shadow: 0px 0px 10px 2px #fff;
+}
